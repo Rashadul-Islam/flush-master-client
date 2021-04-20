@@ -1,0 +1,28 @@
+.style {
+  font-size: 30px;
+  color: lawngreen;
+  padding: 5px;
+}
+.style:hover {
+  color: white;
+}
+.list-style {
+  list-style-position: inside;
+  padding-left: 0;
+}
+.list-style li {
+  padding-bottom: 2%;
+  padding-left: -4%;
+}
+a {
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+.list-style li:hover {
+  color: white;
+  cursor: pointer;
+}

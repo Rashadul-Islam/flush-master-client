@@ -1,0 +1,14 @@
+.mission-card {
+  padding: 5%;
+  margin: 10%;
+}
+.mission-card img {
+  width: 80px;
+}
+.mission-card:hover {
+  margin-bottom: -30px;
+  background-color: honeydew;
+  padding-top: 20px;
+  box-shadow: 2px 5px 4px rgb(68, 63, 63);
+  transition-duration: 500ms;
+}

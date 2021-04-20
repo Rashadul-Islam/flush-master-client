@@ -1,0 +1,28 @@
+#login-card {
+  margin-top: 100px;
+  text-align: center;
+  background-color: DarkSeaGreen;
+  border-radius: 5px;
+  width: 18rem;
+}
+
+#login-card h5 {
+  color: chocolate;
+}
+#login-card p {
+  color: white;
+}
+.google-login {
+  width: 200px;
+  margin-top: 45px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #f08080;
+  border-radius: 50px;
+  color: white;
+}
+.google-login:hover {
+  background-color: honeydew;
+  color: maroon;
+}

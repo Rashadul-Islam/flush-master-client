@@ -1,0 +1,6 @@
+#services-bg{
+    background-image:linear-gradient(rgba(11, 3, 75, 0.5),rgba(7, 2, 77, 0.5)), url("../../../images/services-bg.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    height: auto;
+}

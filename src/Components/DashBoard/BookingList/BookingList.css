@@ -1,0 +1,10 @@
+.book-card {
+  margin: 10%;
+  padding: 5%;
+  background-color: burlywood;
+  border-radius: 5px;
+  box-shadow: 2px 5px 4px rgb(68, 63, 63);
+}
+.card-icon{
+    width: 20%;
+}

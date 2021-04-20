@@ -1,0 +1,18 @@
+.banner{
+    background-size: cover;
+    min-height: 40vh;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../../../images/banner-bg.jpg');
+}
+.title{
+padding-left: 15%;
+color: white;
+padding-top: 100px;
+
+}
+.banner img{
+    display: flex;
+    justify-content: center;
+}
