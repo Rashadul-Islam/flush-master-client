@@ -12,4 +12,4 @@ Features:
 6. Data update and deleted by logged in admin.
 7. uses 3rd party image hosting for service Image.
 
-Live Link [Plumb-Perfect](https://flush-master.netlify.app/)
+Live Link [flush-master](https://flush-master.netlify.app/)
