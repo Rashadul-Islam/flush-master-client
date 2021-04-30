@@ -1,5 +1,3 @@
-Flush Master(Client)
-
 Project name: Flush Master
 
 Live-Site: [Link](https://flush-master.netlify.app/)
