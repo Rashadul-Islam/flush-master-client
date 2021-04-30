@@ -2,6 +2,8 @@ Flush Master(Client)
 
 Project name: Flush Master
 
+Live-Site: [Link](https://flush-master.netlify.app/)
+
 Features:
 
 1. Online service provider site based on react, mongodb and express.js
@@ -11,5 +13,3 @@ Features:
 5. Private route is implemented.
 6. Data update and deleted by logged in admin.
 7. uses 3rd party image hosting for service Image.
-
-Live Link [flush-master](https://flush-master.netlify.app/)
