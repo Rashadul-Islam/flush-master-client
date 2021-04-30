@@ -1,4 +1,4 @@
-<font size="+5">Flush Master</font>
+<font size="5">Flush Master</font>
 
 Live-Site: [Link](https://flush-master.netlify.app/)
 
