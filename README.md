@@ -1,4 +1,4 @@
-Project name: Flush Master
+<font size="+1">Flush Master</font>
 
 Live-Site: [Link](https://flush-master.netlify.app/)
 
