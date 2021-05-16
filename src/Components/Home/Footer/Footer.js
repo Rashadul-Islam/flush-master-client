@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faGooglePlusG, faSkype } from '@fortawesome/free-brands-svg-icons';
 import "./Footer.css";
 import { Link } from 'react-router-dom';
+import FooterEnd from './FooterEnd';
 
 const Footer = () => {
     return (
@@ -52,9 +53,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-warning">
-                <p className="text-center text-white">© 2021 - Flush-Master. Created by <span className="text-info">Rashadul Islam</span> All rights reserved.</p>
-            </div>
+            <FooterEnd></FooterEnd>
         </div>
     );
 };

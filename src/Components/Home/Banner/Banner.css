@@ -16,3 +16,14 @@ padding-top: 100px;
     display: flex;
     justify-content: center;
 }
+
+.banner-text{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size:30px;
+  color: thistle;
+  text-align: center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}

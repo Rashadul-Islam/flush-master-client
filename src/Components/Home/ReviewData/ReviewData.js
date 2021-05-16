@@ -15,5 +15,4 @@ const ReviewData = (props) => {
         </div>
     );
 };
-
 export default ReviewData;
