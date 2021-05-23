@@ -5,7 +5,7 @@ import pencil from '../../../images/pencil.png';
 import scissor from '../../../images/scissor.png';
 const CompanyMission = () => {
     return (
-        <div className='row justify-content-center'>
+        <div className='row justify-content-center' id="mission">
             <div  className="col-lg-4 col-md-6">
               <div className=" mission-card text-center" >
                 <img src={pencil} alt=""/>

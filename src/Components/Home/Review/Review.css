@@ -1,24 +1,28 @@
-.banner-bg{
-    background-image: url("../../../images/review-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100%;
-    height: auto;
+.banner-bg {
+  background-image: url('../../../images/review-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
 }
-#review-height{
-    height: 300px;
-    overflow: hidden;
+
+.review-card {
+  background-color: darkgray;
+  border-radius: 10px;
 }
-#see-more-style{
-    color: white;
-    cursor: pointer;
-    text-align: center;
-    padding-bottom: 2%;
+
+.review-card img{
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+    padding-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
 }
-#hide-more-style{
-    color: white;
-    cursor: pointer;
-    text-align: center;
-    padding-bottom: 2%;
-    display: none;
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
 }

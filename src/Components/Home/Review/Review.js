@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import ReviewData from '../ReviewData/ReviewData';
 import "./Review.css";
-
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Review = () => {
 
@@ -16,33 +16,61 @@ const Review = () => {
             })
     }, [setReviewData])
 
-    const showDiv = () =>{
-        const review = document.getElementById("review-height");
-        review.style.height="100%";
-        document.getElementById("see-more-style").style.display="none";
-        document.getElementById("hide-more-style").style.display="block";
-    }
-    const hideDiv = () =>{
-        const review = document.getElementById("review-height");
-        review.style.height="300px";
-        review.style.cursor="pointer";
-        document.getElementById("see-more-style").style.display="block";
-        document.getElementById("hide-more-style").style.display="none";
-    }
+    var settings = {
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: false,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
 
     return (
-        <div className="banner-bg mt-3">
-            <h4 className="text-center pt-5 text-white">Clients Testimonial</h4>
-            <div className="row d-flex justify-content-center" id="review-height">
-
-                {
-                    reviewData.map(data => <ReviewData data={data} key={data._id}></ReviewData>)
-                }
-            </div>
-            <p id="see-more-style" onClick={showDiv}>See More</p>
-            <p id="hide-more-style" onClick={hideDiv}>Hide More</p>
+        <div className="banner-bg pt-4 pb-5 text-center">
+            <h3 className="text-white pb-3 font-weight-bold">Clients Testimonial</h3>
+            <Slider {...settings}>
+                {reviewData.map(function (data) {
+                    console.log(data);
+                    return (
+                        <div className="d-flex justify-content-center col">
+                            <div className="card review-card pb-3" style={{ width: "18rem" }}>
+                                <img className="card-img-top" src={data.imageURL} alt="" />
+                                <div className="card-body">
+                                    <p>{data.reviewerName}</p>
+                                    <p>{data.designation}</p>
+                                    <p>{data.description}</p>
+                                </div>
+                            </div>
+                        </div>
+                    );
+                })}
+            </Slider>
         </div>
     );
-};
+}
 
 export default Review;
