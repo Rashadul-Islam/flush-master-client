@@ -54,10 +54,9 @@ const Review = () => {
             <h3 className="text-white pb-3 font-weight-bold">Clients Testimonial</h3>
             <Slider {...settings}>
                 {reviewData.map(function (data) {
-                    console.log(data);
                     return (
-                        <div className="d-flex justify-content-center col">
-                            <div className="card review-card pb-3" style={{ width: "18rem" }}>
+                        <div key={data._id} className="d-flex justify-content-center col">
+                            <div className="card review-card" style={{ width: "18rem"}}>
                                 <img className="card-img-top" src={data.imageURL} alt="" />
                                 <div className="card-body">
                                     <p>{data.reviewerName}</p>

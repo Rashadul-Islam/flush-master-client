@@ -62,7 +62,7 @@ const ManageServices = () => {
                 setImage(response.data.data.display_url);
             })
             .catch(function (error) {
-                console.log(error);
+                alert(error);
             });
     }
 
@@ -74,7 +74,6 @@ const ManageServices = () => {
             description: data.description,
             imageURL: imgLink
         }
-        console.log(serviceData);
         const id = _id;
 
         fetch(`https://pure-island-17993.herokuapp.com/update/${id}`, {

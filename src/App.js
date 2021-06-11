@@ -23,7 +23,7 @@ export const UserContext2 = createContext();
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
-  let { name, email, token } = loggedInUser;
+  let {email} = loggedInUser;
   const [isAdmin, setIsAdmin] = useState(false);
   const userEmail = sessionStorage.getItem('userEmail');
   if (userEmail !== null) {
@@ -55,6 +55,9 @@ function App() {
             </Route>
             {
               isAdmin ? (<React.Fragment>
+                <PrivateRoute path="/home">
+                    <Home />
+                  </PrivateRoute>
                 <PrivateRoute path="/dashboard">
                   <OrderList />
                 </PrivateRoute>
@@ -70,6 +73,9 @@ function App() {
               </React.Fragment>)
                 :
                 (<React.Fragment>
+                  <PrivateRoute path="/home">
+                    <Home />
+                  </PrivateRoute>
                   <PrivateRoute path="/booking/:serviceName">
                     <Book />
                   </PrivateRoute>

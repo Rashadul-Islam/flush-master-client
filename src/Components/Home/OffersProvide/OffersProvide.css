@@ -5,12 +5,6 @@
 .mark-area img {
   width: 100%;
 }
-#offer-img {
-  width: 50%;
-  height: 100%;
-  margin-left: 20%;
-}
-
 html,
 body {
   overflow-x: hidden;

@@ -13,7 +13,7 @@ const Banner = () => {
                 <BannerText></BannerText>
             </div>
             <div className="col-md-12 d-flex justify-content-center">
-                <img src={image} alt=""/>
+                <img className="img-fluid" src={image} alt=""/>
             </div>
         </div>
     );

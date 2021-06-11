@@ -57,7 +57,6 @@ const Book = () => {
                     date: new Date(),
                     status: 'Pending'
                 }
-                console.log(bookData)
                 fetch('https://pure-island-17993.herokuapp.com/booking', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
@@ -111,7 +110,7 @@ const Book = () => {
                         </form>
                         <ProcessPayment handlePayment={handlePaymentSuccess}></ProcessPayment>
                         <br />
-                        <p className="input-label">Your Service Cost is {service.price || 0}</p>
+                        <p className="input-label">Your Service Cost is {service.price || 0}$</p>
                         {
                             paymentError && <p style={{ color: 'red', marginLeft: '10px' }}>{paymentError}</p>
                         }

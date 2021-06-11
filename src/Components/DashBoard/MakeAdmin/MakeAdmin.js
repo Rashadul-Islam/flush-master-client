@@ -15,7 +15,6 @@ const MakeAdmin = () => {
 
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        console.log(data)
         const adminData = {
             email: data.email,
         }

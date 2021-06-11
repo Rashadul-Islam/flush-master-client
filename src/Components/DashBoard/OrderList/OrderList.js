@@ -22,12 +22,11 @@ const OrderList = () => {
             .then(data => setOrders(data))
     }, [orders])
 
-    const handleStatus = id => {
-        const orderStatus = document.getElementById('order-status').value;
+    const handleStatus = (id, e)=> {
+        const orderStatus =e.target.value;
         const orderData = {
             status: orderStatus
         }
-        //console.log(id);
         fetch(`https://pure-island-17993.herokuapp.com/booking/update/${id}`, {
             method: 'PATCH',
             headers: { 'content-Type': 'application/json' },
@@ -74,7 +73,7 @@ return (
                                 <td data-label="Name">{order.name}</td>
                                 <td data-label="Email" style={{ wordWrap: 'break-word' }}>{order.email}</td>
                                 <td data-label="Service">{order.serviceName}</td>
-                                <td data-label="Status"><select name="status" id="order-status" onChange={() => handleStatus(order._id)} defaultValue={order.status}>
+                                <td data-label="Status"><select name="status" onChange={(e)=>handleStatus(order._id,e)} defaultValue={order.status}>
                                     <option value="Pending">Pending</option>
                                     <option value="On Going">On Going</option>
                                     <option value="Done">Done</option>

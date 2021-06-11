@@ -39,7 +39,7 @@ const BannerText = () => {
                 options={{
                     strings: [
                         "Need Plumber",
-                        "We Are Always There To Help You",
+                        "We Are Here To Help You",
                         "Check Out Our Services",
                     ],
                     autoStart: true,

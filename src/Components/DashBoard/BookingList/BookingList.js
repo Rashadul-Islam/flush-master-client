@@ -31,8 +31,7 @@ const BookingList = () => {
     .then(data => {
         setBookings(data)
     })
-    }, [token])
-
+    })
 return (
 
     <div className="row">
@@ -54,7 +53,7 @@ return (
                                     <img className="card-icon" src={book.imageURL} alt="" />
                                 </div>
                                 <div>
-                                    <strong className="text-left">{book.status}</strong>
+                                    <strong className="text-right status">{book.status}</strong>
                                 </div>
                             </div>
                             <p className="pt-4 text-dark font-weight-bold">{book.serviceName}</p>

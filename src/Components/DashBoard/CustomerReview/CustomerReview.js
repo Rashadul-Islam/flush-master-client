@@ -18,7 +18,6 @@ const ReviewDashboard = () => {
 
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        console.log(data)
         const reviewData = {
             reviewerName: data.userName,
             designation: data.designation,
@@ -53,7 +52,7 @@ const ReviewDashboard = () => {
                 setImageURL(response.data.data.display_url);
             })
             .catch(function (error) {
-                console.log(error);
+                alert(error);
             });
     }
 

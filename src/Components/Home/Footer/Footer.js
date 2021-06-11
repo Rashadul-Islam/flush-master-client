@@ -2,10 +2,10 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faGooglePlusG, faSkype } from '@fortawesome/free-brands-svg-icons';
 import "./Footer.css";
-import { Link } from 'react-router-dom';
 import FooterEnd from './FooterEnd';
 
 const Footer = () => {
+    const url='';
     return (
         <div>
             <div className="bg-primary pt-5">
@@ -14,10 +14,10 @@ const Footer = () => {
                         <div className="col-lg-3 col-md-6 px-5 pb-5">
                             <h5 className="font-weight-bold">FLUSH-MASTER</h5>
                             <div className="d-flex">
-                                <a className="style" href="#"><FontAwesomeIcon icon={faFacebook} /></a>
-                                <a className="style" href="#"><FontAwesomeIcon icon={faTwitter} /></a>
-                                <a className="style" href="#"><FontAwesomeIcon icon={faGooglePlusG} /></a>
-                                <a className="style" href="#"><FontAwesomeIcon icon={faSkype} /></a>
+                                <a className="style" href={url}><FontAwesomeIcon icon={faFacebook} /></a>
+                                <a className="style" href={url}><FontAwesomeIcon icon={faTwitter} /></a>
+                                <a className="style" href={url}><FontAwesomeIcon icon={faGooglePlusG} /></a>
+                                <a className="style" href={url}><FontAwesomeIcon icon={faSkype} /></a>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6 px-5 pb-5">
@@ -32,11 +32,11 @@ const Footer = () => {
                             <h5 className="font-weight-bold">OUR SERVICES</h5>
                             <p>_____</p>
                             <ul className="list-style">
-                                <li><a href="">House Plumbing</a></li>
-                                <li><a href="">Pipe Clogs</a></li>
-                                <li><a href="">Kitchen Installation</a></li>
-                                <li><a href="">Toilet Clogs Repair</a></li>
-                                <li><a href="">Appliance Repair</a></li>
+                                <li><a href={url}>House Plumbing</a></li>
+                                <li><a href={url}>Pipe Clogs</a></li>
+                                <li><a href={url}>Kitchen Installation</a></li>
+                                <li><a href={url}>Toilet Clogs Repair</a></li>
+                                <li><a href={url}>Appliance Repair</a></li>
                             </ul>
                         </div>
                         <div className="col-lg-3 col-md-6 px-5">
@@ -44,8 +44,8 @@ const Footer = () => {
                             <p>_____</p>
                             <ul className="list-style">
                                 <li><a href="/home">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Contact US</a></li>
+                                <li><a href={url}>About</a></li>
+                                <li><a href={url}>Contact US</a></li>
                                 <li><a href="/login">Login</a></li>
                                 <li><a href="/dashboard">Dashboard</a></li>
                             </ul>

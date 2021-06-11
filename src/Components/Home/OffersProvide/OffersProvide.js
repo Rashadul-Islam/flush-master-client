@@ -11,7 +11,7 @@ const OffersProvide = () => {
             <p className="text-center color-primary">________</p>
             <div className="row pt-5">
                 <div className="col-lg-6 col-md-12">
-                    <img id="offer-img" src={offerImg} alt=""/>
+                    <img className="img-fluid" src={offerImg} alt=""/>
                 </div>
                 <div className="col-lg-6 col-md-12 offer-text">
                     <div className="d-flex">

@@ -10,13 +10,13 @@
   border-radius: 10px;
 }
 
-.review-card img{
-    border-radius: 50%;
-    height: 50%;
-    width: 50%;
-    padding-top: 2%;
-    margin-left: auto;
-    margin-right: auto;
+.review-card img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  padding-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .slick-prev {
   left: 3% !important;
