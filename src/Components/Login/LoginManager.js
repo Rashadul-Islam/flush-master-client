@@ -16,7 +16,7 @@ const setUserToken=()=>{
     sessionStorage.setItem('token', idToken);
     
   }).catch(function(error) {
-    
+    alert(error);
   });
 }
 
@@ -95,6 +95,6 @@ export const handleGoogleSignIn=()=>{
     }).then(function() {
       
     }).catch(function(error) {
-      
+      alert(error);
     });
 }
