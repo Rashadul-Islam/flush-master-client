@@ -11,3 +11,7 @@ Features:
 5. Private route is implemented.
 6. Data update and deleted by logged in admin.
 7. uses 3rd party image hosting for service Image.
+
+Admin Login:
+Email: rashed@admin.com
+password: pass1720
