@@ -69,7 +69,7 @@ const ManageServices = () => {
         let imgLink = image !== undefined ? image : imageURL;
         const serviceData = {
             serviceName: data.serviceName || serviceName,
-            price: data.serviceName || price,
+            price: data.price || price,
             description: data.description || description,
             imageURL: imgLink,
         };
