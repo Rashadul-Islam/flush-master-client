@@ -58,29 +58,35 @@ const ReviewDashboard = () => {
 
     return (
         <div className="row">
-            <div className='col-lg-2 col-md-3'>
+            <div className='col-md-2'>
                 <Sidebar></Sidebar>
             </div>
-            <div className='col-lg-10 col-md-9 d-flex flex-column right-div '>
-                <div className='d-flex justify-content-between title-div'>
-                    <h5>Review</h5>
-                    <p>{name}</p>
+            <div className='col-md-10 d-flex flex-column right-div mt-5'>
+                <div className='d-flex justify-content-center title-div'>
+                    <h5>Customer Feedback</h5>
                 </div>
-                <div className='right-content book-form'>
-                    <div className=" mb-5">
-                        <form className='mt-5' onSubmit={handleSubmit(onSubmit)}>
-                            <input className='input-style' name="userName" {...register("userName")} placeholder="Name" />
-                            <br />
-                            <input className='input-style' name="designation" {...register("designation")} placeholder="Company's Name. Designation" />
-                            <br />
-                            <input className='input-large-style' name="description" {...register("description")} placeholder="Description" />
-                            <br />
-                            <input className="img-input " type="file" onChange={handleImageUpload} required />
-                            <br />
-                            <input id="submit-btn" className='btn' type="submit" />
-                        </form>
-                    </div>
-
+                <div className='mx-auto w-75'>
+                    <form className='mt-2' onSubmit={handleSubmit(onSubmit)}>
+                        <div className='form-group'>
+                            <label>Customer Name</label>
+                            <input className='form-control' name="userName" {...register("userName")} placeholder="MR. john" />
+                        </div>
+                        <div className='row'>
+                            <div className='form-group col'>
+                                <label>Company's Name OR Designation</label>
+                                <input className='form-control' name="designation" {...register("designation")} placeholder="CEO" />
+                            </div>
+                            <div className='form-group col'>
+                                <label>Customer Image</label>
+                                <input className='form-control-file' type="file" onChange={handleImageUpload} required />
+                            </div>
+                        </div>
+                        <div className='form-group'>
+                            <label>DEscription</label>
+                            <textarea className='form-control' type="text" rows={5} name="description" {...register("description")} placeholder=" about services..." />
+                        </div>
+                        <input className='btn btn-primary' type="submit" />
+                    </form>
                 </div>
             </div>
         </div>

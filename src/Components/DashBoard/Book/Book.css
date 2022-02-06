@@ -24,3 +24,8 @@
 .book-form {
   padding-left: 20%;
 }
+@media screen and (max-width: 600px) {
+  .book_service {
+    padding: 15px;
+  }
+}

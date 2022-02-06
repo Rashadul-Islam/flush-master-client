@@ -1,6 +1,6 @@
 .style {
   font-size: 30px;
-  color: lawngreen;
+  color: rgb(57, 57, 66);
   padding: 5px;
 }
 .style:hover {
@@ -25,4 +25,13 @@ a:hover {
 .list-style li:hover {
   color: white;
   cursor: pointer;
+}
+.footer_style {
+  background-color: cadetblue;
+}
+@media (min-width: 1281px) {
+  .footer_style {
+    background-color: cadetblue;
+    clip-path: ellipse(85% 100% at 50% 100%);
+  }
 }

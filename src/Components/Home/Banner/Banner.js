@@ -8,12 +8,12 @@ const Banner = () => {
 
 
     return (
-        <div className="banner pt-5 row">
-            <div className="font-weight-bold col-md-12 d-flex justify-content-center">
+        <div className="banner mt-5 row">
+            <div className="font-weight-bold mt-5 col-md-12 d-flex justify-content-center">
                 <BannerText></BannerText>
             </div>
             <div className="col-md-12 d-flex justify-content-center">
-                <img className="img-fluid" src={image} alt=""/>
+                <img className="img-fluid" src={image} alt="" />
             </div>
         </div>
     );

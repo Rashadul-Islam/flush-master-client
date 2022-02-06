@@ -6,7 +6,6 @@ import {
     CardCvcElement,
     CardExpiryElement
 } from "@stripe/react-stripe-js";
-import './SplitCardForm.css';
 
 
 const useOptions = () => {
@@ -67,28 +66,26 @@ const SplitCardForm = ({ handlePayment, paymentStatus }) => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <label className="input-label">
-                    <p>Card number</p>
-
-                    <CardNumberElement className="card-number" />
-                </label>
-                <br />
-                <label className="input-label">
-                    <p>Expiration date</p>
-                    <CardExpiryElement className="date-input" />
-                </label>
-                <br />
-                <label className="input-label">
-                    <p>CVC</p>
-                    <CardCvcElement className="cvc-input" />
-                </label>
-                <br />
-                <button id="submit-btn" className="btn" type="submit" disabled={!stripe}>
+                <div className="row">
+                    <div className="form-group col">
+                        <label>Card Number</label>
+                        <CardNumberElement className="card-number" />
+                    </div>
+                    <div className="form-group col">
+                        <label>Expire Date</label>
+                        <CardExpiryElement className="date-input" />
+                    </div>
+                    <div className="form-group col">
+                        <label>CVC</label>
+                        <CardCvcElement className="cvc-input" />
+                    </div>
+                </div>
+                <button className="btn btn-primary" type="submit" disabled={!stripe}>
                     Pay
-        </button>
+                </button>
             </form>
 
-        </div>
+        </div >
     );
 };
 

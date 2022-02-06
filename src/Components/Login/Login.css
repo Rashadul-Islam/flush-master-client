@@ -1,14 +1,7 @@
-#login-body {
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../images/login-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  min-height: 100vh;
-}
 #login-card {
   margin-top: 30px;
   text-align: center;
-  background-color: DarkSeaGreen;
+  background-color: white;
 }
 #login-card h5 {
   text-align: start;
@@ -32,12 +25,6 @@
   background-color: chocolate;
 }
 
-#user-manage-btn {
-  text-decoration: none;
-  border: none;
-  background-color: DarkSeaGreen;
-  color: blue;
-}
 #optional-line {
   margin-top: 20px;
   text-align: center;
@@ -51,7 +38,7 @@
 
 #optional-line:after,
 #optional-line:before {
-  content: ' ';
+  content: " ";
   display: block;
   border-bottom: 1px solid gray;
 }
@@ -67,4 +54,29 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+.handleButtonToggle {
+  background-color: white;
+  border: none;
+  color: blue;
+  font-weight: bold;
+}
+.align_login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.login_bg {
+  height: 100vh;
+  background-color: rgb(106, 106, 106);
+}
+@media (min-width: 1281px) {
+  .login_bg {
+    height: 100vh;
+    display: block;
+    box-sizing: border-box;
+    background-color: rgb(106, 106, 106);
+    clip-path: ellipse(85% 100% at 50% 0%);
+  }
 }

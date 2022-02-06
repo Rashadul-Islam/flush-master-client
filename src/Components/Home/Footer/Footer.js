@@ -5,10 +5,10 @@ import "./Footer.css";
 import FooterEnd from './FooterEnd';
 
 const Footer = () => {
-    const url='';
+    const url = '';
     return (
-        <div>
-            <div className="bg-primary pt-5">
+        <div className='footer_style'>
+            <div className="pt-5">
                 <div className="container fluid justify-content-center">
                     <div className="row pt-5">
                         <div className="col-lg-3 col-md-6 px-5 pb-5">
@@ -24,7 +24,7 @@ const Footer = () => {
                             <h5 className="font-weight-bold">OUR ADDRESS</h5>
                             <p>_____</p>
                             <h6>RN Road, 234 Evenue <br />
-                    California, USA</h6>
+                                California, USA</h6>
                             <h6 className="pt-3">flushmaster@gmail.com</h6>
                             <h6 className="pt-3">+123 456 789</h6>
                         </div>

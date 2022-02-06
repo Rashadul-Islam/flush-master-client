@@ -19,7 +19,7 @@ const Book = () => {
     const [service, setService] = useState([])
     useEffect(() => {
         fetch(`https://pure-island-17993.herokuapp.com/service/name/${productName}`)
-        .then(res => res.json())
+            .then(res => res.json())
             .then(data => {
                 setService(data)
                 setIsService(true)
@@ -84,41 +84,41 @@ const Book = () => {
     const [paymentStatus, setPaymentStatus] = useState('')
     return (
         <div className="row">
-            <div className='col-lg-2 col-md-3'>
+            <div className='col-md-2'>
                 <Sidebar></Sidebar>
             </div>
-            <div className='col-lg-10 col-md-9 d-flex flex-column right-div '>
-                <div className='d-flex justify-content-between title-div'>
-                    <h5>Book</h5>
-                    <p>{name}</p>
+            <div className='col-md-10 d-flex flex-column'>
+                <div className='d-flex justify-content-center mt-5'>
+                    <h5 className='co_title'>Book</h5>
                 </div>
-                <div className='right-content book-form'>
-                    <div className=" mb-5">
-                        <form id="myForm" className='mt-5'>
-                            <label className='input-label'>Name</label>
-                            <br />
-                            <input id="name" className='input-style' defaultValue={name} name="username" />
-                            <br />
-                            <label className='input-label'>Email</label>
-                            <br />
-                            <input id="email" className='input-style' defaultValue={email} name="email" />
-                            <br />
-                            <label className='input-label'  >Service Name</label>
-                            <br />
-                            <input id="serviceName" onBlur={handle} defaultValue={service.serviceName} placeholder="Service Name" className='input-style' name="service" />
-                            <br />
-                        </form>
-                        <ProcessPayment handlePayment={handlePaymentSuccess}></ProcessPayment>
-                        <br />
-                        <p className="input-label">Your Service Cost is {service.price || 0}$</p>
-                        {
-                            paymentError && <p style={{ color: 'red', marginLeft: '10px' }}>{paymentError}</p>
-                        }
-                        {
-                            paymentSuccess && <p style={{ color: 'green', marginLeft: '10px' }}>Your payment is successfull</p>
-                        }
-                    </div>
-
+                <div className="mx-auto book_service w-75">
+                    <form id="myForm" className='mt-2'>
+                        <div className='form-group'>
+                            <label>Name</label>
+                            <input className='form-control' defaultValue={name} name="username" />
+                        </div>
+                        <div className='form-group'>
+                            <label>Email</label>
+                            <input className='form-control' defaultValue={email} name="email" />
+                        </div>
+                        <div className='row'>
+                            <div className='form-group col'>
+                                <label>Service Name</label>
+                                <input className='form-control' onBlur={handle} defaultValue={service.serviceName} name="service" />
+                            </div>
+                            <div className='form-group col'>
+                                <label>Service Charge</label>
+                                <input className='form-control' value={`${service.price || 0}$`} />
+                            </div>
+                        </div>
+                    </form>
+                    <ProcessPayment handlePayment={handlePaymentSuccess}></ProcessPayment>
+                    {
+                        paymentError && <p style={{ color: 'red', marginLeft: '10px' }}>{paymentError}</p>
+                    }
+                    {
+                        paymentSuccess && <p style={{ color: 'green', marginLeft: '10px' }}>Your payment is successfull</p>
+                    }
                 </div>
             </div>
         </div>

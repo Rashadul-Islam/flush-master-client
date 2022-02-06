@@ -35,21 +35,20 @@ const MakeAdmin = () => {
 
     return (
         <div className="row">
-            <div className='col-lg-2 col-md-3'>
+            <div className='col-md-2'>
                 <Sidebar></Sidebar>
             </div>
-            <div className='col-lg-10 col-md-9 d-flex flex-column right-div '>
-                <div className='d-flex justify-content-between title-div'>
-                    <h5>Make Admin</h5>
-                    <p>{name}</p>
+            <div className='col-md-10 d-flex flex-column mt-5'>
+                <div className='d-flex justify-content-center'>
+                    <h5 className='co_title'>Make Admin</h5>
                 </div>
-                <div className='right-content book-form'>
-                    <form className='mt-5' onSubmit={handleSubmit(onSubmit)}>
-                        <label className='input-label'>Email</label>
-                        <br />
-                        <input className="input-style" name="email" placeholder="john@gmail.com" {...register("email")} />
-                        <br />
-                        <input id="submit-btn" className='btn' type="submit" />
+                <div className='mx-auto w-50 addService_div'>
+                    <form className='mt-3' onSubmit={handleSubmit(onSubmit)}>
+                        <div className='form-group'>
+                            <label>Email</label>
+                            <input className="form-control" name="email" placeholder="john@gmail.com" {...register("email")} />
+                        </div>
+                        <input className='btn btn-primary' type="submit" />
                     </form>
                 </div>
             </div>

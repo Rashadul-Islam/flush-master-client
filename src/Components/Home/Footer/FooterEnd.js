@@ -2,8 +2,8 @@ import React from 'react';
 
 const FooterEnd = () => {
     return (
-        <div style={{overflow:'hidden'}} className="bg-danger pt-2">
-            <p className="text-center text-white pt-1">© 2021 - Flush-Master. Created by <span className="text-warning">Rashadul Islam</span> All rights reserved.</p>
+        <div style={{ overflow: 'hidden', backgroundColor: "rgb(106,106,106)" }} className="pt-2 shadow-lg">
+            <p className="text-center text-white pt-1">© {new Date().getFullYear()} - Flush-Master. Created by <span className="text-warning">Rashadul Islam</span> All rights reserved.</p>
         </div>
     );
 };
